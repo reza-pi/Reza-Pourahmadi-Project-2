@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+nav {
+  background-color: #333;
+  padding: 1rem 0;
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+nav ul li {
+  margin: 0 1.5rem;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+nav ul li a:hover {
+  color: #f7b731;
+}
+
+h1 {
+  text-align: center;
+  color: #222;
+  margin: 2rem 0;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1rem auto;
+  border-radius: 8px;
+}
+
+video {
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 1.5rem auto;
+  border-radius: 10px;
+}
+
+audio {
+  display: block;
+  margin: 1.5rem auto;
+}
+
+.resume-container {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.resume-container h2 {
+  color: #444;
+  border-bottom: 2px solid #f7b731;
+  padding-bottom: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+ul {
+  padding: 1rem;
+}
+
+ul li {
+  list-style: none;
+  padding: 0.5rem 0;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: 95%;
+  }
+
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav ul li {
+    margin-bottom: 1rem;
+  }
+}
