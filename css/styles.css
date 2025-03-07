@@ -7,44 +7,57 @@ body {
   color: #333;
 }
 
+/* Navigation Bar */
 nav {
   background-color: #333;
   padding: 1rem 0;
+  text-align: center;
 }
 
 nav ul {
   display: flex;
   justify-content: center;
   list-style: none;
-}
-
-nav ul li {
-  margin: 0 1.5rem;
+  gap: 2rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav ul li a {
   color: white;
   text-decoration: none;
   font-weight: bold;
-  transition: color 0.3s;
+  font-size: 1.2rem;
+  transition: color 0.3s ease-in-out;
 }
 
 nav ul li a:hover {
   color: #f7b731;
 }
 
+/* Headings */
 h1 {
   text-align: center;
   color: #222;
   margin: 2rem 0;
+  font-size: 2rem;
 }
 
+h2 {
+  color: #333;
+  font-size: 1.5rem;
+  margin: 1rem 0;
+}
+
+/* Containers */
 .container {
   width: 80%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
 }
 
+/* Images & Media */
 img {
   display: block;
   max-width: 100%;
@@ -53,24 +66,21 @@ img {
   border-radius: 8px;
 }
 
-video {
+video, audio {
   display: block;
-  width: 100%;
-  max-width: 800px;
   margin: 1.5rem auto;
+  max-width: 100%;
   border-radius: 10px;
 }
 
-audio {
-  display: block;
-  margin: 1.5rem auto;
-}
-
+/* Resume Page */
 .resume-container {
   background: #fff;
   padding: 2rem;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  width: 60%;
+  margin: 0 auto;
 }
 
 .resume-container h2 {
@@ -80,6 +90,7 @@ audio {
   margin-bottom: 1rem;
 }
 
+/* Lists */
 ul {
   padding: 1rem;
 }
@@ -89,9 +100,55 @@ ul li {
   padding: 0.5rem 0;
 }
 
+/* Page 3 - Web Dev Journey */
+.page3-container {
+  background: #f4f4f4;
+  padding: 2rem;
+  border-radius: 10px;
+}
+
+.page3-container h2 {
+  color: white;
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+/* Fixed Width Section */
+.fixed-width {
+  width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .container {
+    width: 90%;
+  }
+
+  .resume-container {
+    width: 75%;
+  }
+
+  .fixed-width {
+    width: 75%;
+  }
+}
+
 @media (max-width: 768px) {
   .container {
     width: 95%;
+  }
+
+  .resume-container {
+    width: 90%;
+  }
+
+  .fixed-width {
+    width: 90%;
   }
 
   nav ul {
